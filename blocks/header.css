@@ -1,0 +1,16 @@
+.header {
+background-color: #fff;
+display: flex;
+justify-content: center;
+
+
+}
+
+
+.header__logo {
+width:94px;
+height:26px;
+border: rgba(255, 255, 255, 0.8) solid;
+bottom: 1px;
+
+}

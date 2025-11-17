@@ -6,8 +6,7 @@
     <meta name="description" content="An interactive social media app for sharing photos" />
   <meta name="author" content="Yalemis Onasch" />
   <meta name="keywords" content=" photo sharing, user profiles" />
-<link rel="stylesheet" href="pages/index.css" />
-<link rel="stylesheet" href="blocks/page.css" />
+<link rel="stylesheet" href="./pages/index.css">
   <link rel="icon" type="image/png" href="./favicon.ico" />
     <title>SPOTS</title>
 </head>
@@ -15,16 +14,99 @@
   <body>
     <div class="page">
       <header class="header">
-        <h1 class="header__title">Spots</h1>
+        <img class="header__logo" src="./images/logo.svg" alt="Spots Logo" />
+        <h1 class="header__title"></h1>
       </header>
       <main class="content">
-        <section class="profile">
+        <section class="profile page__section">
+          <img class="profile__avatar" src="./images/avatar.jpg" alt="Profile Picture" />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button type="button"class="profile__edit-button">
+  <img src="./images/pencil.svg" alt="Pencil Icon" /> Edit Profile
+</button>
+          </div>
+          <button type="button" class="profile__add-button">
+  <img src="./images/Plus.svg" alt="Plus Icon" /> New Post
+</button>
         </section>
-        <section class="gallery">
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img class="card__image" src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="Val Thorens" />
+              <div class="card__content">
+                <div class="card__info">
+                <h2 class="card__title">Val Thorens</h2>
+              </div>
+<button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+            </li>
+            <li class="card">
+              <img class="card__image" src="./images/2-photo-by-ceiline-from-pexels.jpg" alt="Restaurant terrace" />
+<div class="card__content">
+  <div class="card__info">
+                <h2 class="card__title">Restaurant terrace</h2>
+              </div>
+              <button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+            </li>
+            <li class="card">
+              <img class="card__image" src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg" alt="An outdoor cafe" />
+<div class="card__content">
+  <div class="card__info">
+                <h2 class="card__title">An outdoor cafe</h2>
+              </div>
+              <button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+              </li>
+               <li class="card">
+              <img class="card__image" src="./images/4-photo-by-maurice-laschet-from-pexels.jpg" alt="A very long bridge, over the forest..." />
+<div class="card__content">
+  <div class="card__info">
+                <h2 class="card__title">A very long bridge, over the forest...</h2>
+              </div>
+              <button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+               </li>
+               <li class="card">
+              <img class="card__image" src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg" alt="Tunnel with morning light" />
+              <div class="card__content">
+                <div class="card__info">
+                <h2 class="card__title">Tunnel with morning light</h2>
+              </div>
+<button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+
+              </li>
+              <li class="card">
+              <img class="card__image" src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="Mountain house" />
+              <div class="card__content">
+                <div class="card__info">
+                <h2 class="card__title">Mountain house</h2>
+              </div>
+<button type="button" class="card__like-button">
+  <img src="./images/Like.svg" alt="Heart Icon" />
+</button>
+              </div>
+              </li>
+          </ul>
+
+
         </section>
       </main>
       <footer class="footer">
-        <p class="footer__text"></p>
+        <p class="footer__text"> 2023 &copy Spots</p>
       </footer>
     </div>
   </body>

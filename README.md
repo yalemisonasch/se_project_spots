@@ -1,5 +1,10 @@
 # Project 3: Spots
 
+## Project Pitch Video
+
+ Check out [this video](https://drive.google.com/file/d/1NCtBMaPXbdkOx8cp_TFNmm3q51YLHCI8/view?usp=drive_link), where I describe my 
+ project and some challenges I faced while building it.
+
 ### Overview  
 
 * Intro  
