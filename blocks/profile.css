@@ -1,142 +1,139 @@
-.profile{
-  display:flex;
+.profile {
+  display: flex;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
   margin: 0 auto;
 }
 
-.profile__avatar{
-  width:190px;
-  height:190px;
+.profile__avatar {
+  width: 190px;
+  height: 190px;
   margin-right: 20px;
   border-radius: 12px;
-
 }
 
-.profile__column{
+.profile__column {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: flex-start;
 }
 
-.profile__name{
-  margin-bottom: 0 0 12px;
+.profile__name {
+  margin-bottom: 12px;
   font-size: 32px;
   line-height: 100%;
   font-weight: 500;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: medium;
+  font-style: normal;
   color: #212121;
-  height: 32px;
   text-overflow: ellipsis;
-  display:-webkit-box;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
 
-.profile__description{
+.profile__description {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 100%;
   font-weight: 500;
-  font-style: medium;
-  color: #212121;
-  opacity:70%;
-  width:97px;
-  height: 16px;
-  align-self: flex-start;
-  text-overflow: ellipsis;
-  display:-webkit-box;
+  font-style: normal;
+  color: rgba(33, 33, 33, 0.7);
+  max-width: 420px;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  max-width: 420px;
+  overflow: hidden;
 }
 
 .profile__edit-button {
   margin-top: auto;
-  align-self: flex-start;
-  height:16px;
+  align-self:flex-start;
+  margin-bottom: 20px;
   background: transparent;
   border: none;
   font-size: 16px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: rgba(33,33,33,.7);
+  color: rgba(33, 33, 33, 0.7);
+  cursor: pointer;
+  padding: 8px 4px;
+  min-height: 32px;
+  opacity: 0.7;
+  transition: opacity 0.25s ease;
+}
+
+.profile__edit-button:hover,
+.profile__edit-button:focus-visible {
+  opacity: 1;
+  outline: none;
 }
 
 .profile__add-button {
-margin-left: auto;
-height:52px;
-background: #212121;
-border-radius: 8px;
-border: none;
-color: #fcf5e5;
-font-size: 16px;
-font-family: "Poppins", Arial, Helvetica, sans-serif;
-font-weight: 500;
-font-style: medium;
-line-height: 100%;
-padding-top:18px;
-padding-bottom:18px;
-padding-left:32px;
-padding-right:32px;
-align-self: flex-start;
-display: flex;
-gap:8px;
-border-radius:8px;
+  margin-left: auto;
+  background: #212121;
+  border-radius: 8px;
+  border: none;
+  color: #fcf5e5;
+  font-size: 16px;
+  height: 52px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 100%;
+  padding: 18px 32px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.profile__add-button:hover,
+.profile__add-button:focus-visible {
+  opacity: 1;
+  outline: none;
 }
 
 @media screen and (max-width: 627px) {
-  .profile{
+  .profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width:288px;
-    padding-top:20px;
-}
+    max-width: 288px;
+    padding-top: 20px;
+  }
 
-.profile__avatar{
-  margin-right: 0;
-  height: 80px;
-  width: 80px;
-}
-.profile__add-button {
-  margin:0;
-  gap: 8px;
-  align-self: center;
-  text-align: center;
-  width:288px;
-  height:52px;
-  background: #212121;
-  border-radius: 8px;
-  justify-content: center;
-}
+  .profile__avatar {
+    margin-right: 0;
+    height: 80px;
+    width: 80px;
+  }
 
-.profile__description{
-  align-self: center;
-  margin-bottom: 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-font-family: "Poppins", Arial, Helvetica, sans-serif;
-font-style: medium;
-color: rgba(33, 33, 33,0.7);
-max-width: 288px;
-}
+  .profile__add-button {
+    margin: 0;
+    align-self: center;
+    width: 288px;
+    justify-content: center;
+  }
 
-.profile__edit-button {
-  align-self: center;
-  margin-bottom: 20px;
-}
+  .profile__description {
+    align-self: center;
+    margin-bottom: 32px;
+    max-width: 288px;
+  }
 
-.profile__name{
-  margin-bottom: 6px;
-font-size: 20px;
-font-weight: 500;
-font-family: "Poppins", Arial, Helvetica, sans-serif;
-font-style: medium;
-color: #212121;
-max-width: 288px;
-}
+  .profile__edit-button {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .profile__name {
+    margin-bottom: 6px;
+    font-size: 20px;
+    max-width: 288px;
+  }
 }

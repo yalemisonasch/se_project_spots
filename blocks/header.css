@@ -2,15 +2,14 @@
 background-color: #fff;
 display: flex;
 justify-content: center;
-
-
+padding: 10px 0;
 }
 
 
 .header__logo {
 width:94px;
 height:26px;
-border: rgba(255, 255, 255, 0.8) solid;
+border: 1px solid rgba(255, 255, 255, 0.8);
 bottom: 1px;
 
 }
