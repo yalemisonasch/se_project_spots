@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src:
-    url("./Poppins/Poppins-Regular.ttf") format("truetype");
+  url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -12,6 +12,6 @@
   font-style: normal;
   font-weight: 500;
   src:
-    url("./Poppins/Poppins-Medium.ttf") format("truetype");
+    url("./fonts/Poppins/Poppins-Medium.ttf") format("truetype");
   font-display: swap;
 }
