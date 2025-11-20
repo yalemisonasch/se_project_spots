@@ -37,6 +37,7 @@
 }
 
 .card__title {
+  margin: 0;
   font-size: 20px;
   line-height: 120%;
   font-weight: 500;
@@ -56,16 +57,11 @@
     height: 288px;
     margin-bottom: 12px;
   }
-}
 
   .card__title {
     font-size: 16px;
     line-height: 100%;
     max-width: 235px;
   }
-
-  .cards__list {
-    gap: 20px;
-    justify-content: center;
-  }
+}
 
